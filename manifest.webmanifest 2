@@ -1,0 +1,15 @@
+{
+  "id": "./",
+  "name": "PO Auto Signals",
+  "short_name": "PO Signals",
+  "description": "محلل إشارات للأسواق مع مؤشرات فنية وتنبيهات",
+  "lang": "ar",
+  "dir": "rtl",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#08111f",
+  "theme_color": "#0b1220",
+  "icons": [{"src":"./icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]
+}
