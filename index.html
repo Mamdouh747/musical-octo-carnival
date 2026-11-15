@@ -25,7 +25,7 @@ main{max-width:920px;margin:auto;padding:18px 0 38px}.top{display:flex;justify-c
 'use strict';
 const $=id=>document.getElementById(id);
 const app={socket:null,ticks:Object.create(null),latest:Object.create(null),signals:Object.create(null),logs:[],audio:false,interval:null,connectedAt:0};
-const DEFAULT_SYMBOLS='EURUSD,GBPUSD,USDJPY,AUDUSD';='XAUUSD,EURUSD,GBPUSD,USDJPY,USDCHF,AUDUSD,USDCAD,NZDUSD,US30,NAS100,SPX500,DAX40,BTCUSD,ETHUSD';
+const DEFAULT_SYMBOLS='EURUSD,GBPUSD,USDJPY,AUDUSD';
 function getSymbols(){return [...new Set($('symbols').value.split(',').map(s=>s.trim().toUpperCase()).filter(Boolean))]}
 function setStatus(message,type=''){ $('feedStatus').textContent=message;$('feedStatus').className='status '+type;$('mainStatus').textContent=message;$('mainStatus').className='status '+type; }
 function badge(text){$('connectionBadge').textContent=text}
